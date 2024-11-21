@@ -10,9 +10,17 @@
   <body>
     <header class="bg-dark p-3 d-flex justify-content-between">
         <img class="logo" src="./img/duck.png" alt="Duck logo">
+        <nav class="navbar  d-none d-lg-block">
+            <div class="container-fluid bg-dark">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success text-light border-light" type="submit">Search</button>
+              </form>
+            </div>
+        </nav>
         <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
           </div>
-          <nav class="navbar navbar-dark bg-dark">
+          <nav class="navbar navbar-dark bg-dark d-lg-none">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
