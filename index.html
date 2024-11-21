@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
   <body>
-    <header class="bg-dark p-3 d-flex justify-content-between position-sticky top-0 bottom-0 shadow">
+    <header class="bg-dark p-3 d-flex justify-content-between position-sticky top-0 bottom-0 z-3 shadow">
         <img class="logo" src="./img/duck.png" alt="Duck logo">
             <nav class="navbar navbar-expand-lg bg-dark d-none d-lg-block flex-grow-1">
                 <div class="container-fluid">
@@ -59,18 +59,14 @@
     </header>
     <main>
       <section>
-        <div class="container">
-          <div class="row">
-            <div class="col d-flex justify-content-between mt-4 mb-4">
+      <div class="container">
+        <div class="row row-cols-lg-2">
+          <div class="col-12 mt-4 mb-4">
+        <table class="table mb-5">
+          <div class="d-flex justify-content-between">
               <h1>Catalogo Libri</h1>
               <button type="button" class="btn btn-primary text-end">Aggiungi Libro</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-      <div class="container">
-        <table class="table mb-5">
+            </div>  
           <thead>
             <tr>
               <th class="col">Titolo</th>
@@ -83,7 +79,7 @@
             <td class="table-secondary">I pilastri della terra</td>
             <td class="table-secondary d-none d-md-table-cell">-</td>
             <td class="table-secondary"><span class="badge text-bg-success">Disponibile</span></td>
-            <td class="table-secondary"><button type="button" class="btn btn-outline-secondary me-1"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
+            <td class="table-secondary d-flex"><button type="button" class="btn btn-outline-secondary me-1"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
           </tr>
           <tr class="table-light">
             <td class="table-light">I promessi sposi</td>
@@ -152,6 +148,8 @@
             <td class="table-light"><button type="button" class="btn btn-outline-secondary me-1"><i class="fa-solid fa-pencil"></i></button><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
           </tr>
         </table>
+      </div>
+      <div class="col-12 mt-4">
         <div class="card mb-4">
           <div class="card-header fs-2">
             Todo
@@ -214,6 +212,8 @@
             </div>
           </div>
         </div>
+      </div>
+      </div>
       </div>
       </section>
     </main>
